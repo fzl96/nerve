@@ -8,7 +8,10 @@ import { ArrowRight } from "lucide-react";
 
 // Local component imports
 import { Section, Container } from "@/components/craft";
-import { Button } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
+import { cn } from "@/lib/utils";
+
+import Placeholder from "../../../public/hand.webp";
 
 const Hero = () => {
   return (
@@ -21,26 +24,31 @@ const Hero = () => {
             size={"sm"}
             variant={"outline"}
           >
-            <Link className="not-prose" href="https://9d8.dev">
-              Lorem ipsum dolor sit amet <ArrowRight className="w-4" />
-            </Link>
+            <span className="not-prose">
+              Sistem Pakar Carpal Tunnel Syndrome
+            </span>
           </Button>
           <h1>
             <Balancer>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              Kenali Gejala Carpal Tunnel Syndrome Lebih Cepat
             </Balancer>
           </h1>
           <h3 className="text-muted-foreground">
             <Balancer>
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Dengan sistem pakar kami, Anda dapat mendeteksi potensi Carpal
+              Tunnel Syndrome lebih dini dan mendapatkan saran yang tepat untuk
+              langkah selanjutnya.
             </Balancer>
           </h3>
-          <div className="not-prose my-8 h-96 w-full overflow-hidden rounded-lg border md:h-[480px] md:rounded-xl">
+          <Link className={cn(buttonVariants())} href="/diagnosa">
+            <span className="text-primary-foreground flex gap-2 items-center">
+              Diagnosa <ArrowRight className="h-4 w-4" />
+            </span>
+          </Link>
+          <div className="not-prose my-8 h-96 w-full overflow-hidden rounded-lg border md:h-[500px] md:rounded-xl">
             <Image
               className="h-full w-full object-cover object-bottom"
-              src="/placeholder.webp"
+              src={Placeholder}
               width={1920}
               height={1080}
               alt="hero image"

@@ -30,7 +30,7 @@ export function NavBar() {
           </SheetTrigger>
           <SheetContent side="left">
             <SheetHeader>
-              <SheetTitle>fabrika.</SheetTitle>
+              <SheetTitle>nerve.</SheetTitle>
               <SheetDescription>
                 Scale and launch products with expert developers, on-demand, at
                 a flat monthly fee
@@ -45,33 +45,33 @@ export function NavBar() {
                 </Link>
               </DialogClose>
               <DialogClose asChild>
-                <Link href="/software">
+                <Link href="/diagnosa">
                   <Button variant="outline" className="w-full">
-                    Software
+                    Diagnosa
                   </Button>
                 </Link>
               </DialogClose>
               <DialogClose asChild>
-                <Link href="/automation">
+                <Link href="/tentang-kami">
                   <Button variant="outline" className="w-full">
-                    Automation
+                    Tentang Kami
                   </Button>
                 </Link>
               </DialogClose>
               <DialogClose asChild>
-                <Link href="/blog">
+                <Link href="/carpal-tunnel-syndrome">
                   <Button variant="outline" className="w-full">
-                    Blog
+                    Informasi Penyakit
                   </Button>
                 </Link>
               </DialogClose>
-              <DialogClose asChild>
-                <Link href="/projects">
-                  <Button variant="outline" className="w-full">
-                    Projects
-                  </Button>
-                </Link>
-              </DialogClose>
+              {/* <DialogClose asChild> */}
+              {/*   <Link href="/projects"> */}
+              {/*     <Button variant="outline" className="w-full"> */}
+              {/*       Projects */}
+              {/*     </Button> */}
+              {/*   </Link> */}
+              {/* </DialogClose> */}
               <ModeToggle />
             </div>
           </SheetContent>
@@ -79,23 +79,23 @@ export function NavBar() {
         <NavigationMenu>
           <NavigationMenuList className="max-[825px]:hidden ">
             <Link href="/" className="pl-2">
-              <h1 className="font-bold">fabrika.</h1>
+              <h1 className="font-bold">nerve.</h1>
             </Link>
           </NavigationMenuList>
         </NavigationMenu>
         <div className="flex items-center gap-2 max-[825px]:hidden">
-          <Link href="/software">
-            <Button variant="ghost">Software</Button>
+          <Link href="/diagnosa">
+            <Button variant="ghost">Diagnosa</Button>
           </Link>
-          <Link href="/automation">
-            <Button variant="ghost">Automation</Button>
+          <Link href="/tentang-kami">
+            <Button variant="ghost">Tentang Kami</Button>
           </Link>
-          <Link href="/blog">
-            <Button variant="ghost">Blog</Button>
+          <Link href="/carpal-tunnel-syndrome">
+            <Button variant="ghost">Informasi Penyakit</Button>
           </Link>
-          <Link href="/projects">
-            <Button variant="ghost">Projects</Button>
-          </Link>
+          {/* <Link href="/projects"> */}
+          {/*   <Button variant="ghost">Projects</Button> */}
+          {/* </Link> */}
           <ModeToggle />
         </div>
       </div>

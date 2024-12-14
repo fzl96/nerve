@@ -18,30 +18,19 @@ type FeatureText = {
 const featureText: FeatureText[] = [
   {
     icon: <Coins className="h-6 w-6" />,
-    title: "Lorem Ipsum",
-    href: "/",
+    title: "Tentang Kami",
+    href: "/tentang-kami",
     description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    cta: "Learn More",
+      "Pelajari bagaimana sistem kami membantu mendeteksi Carpal Tunnel Syndrome.",
+    cta: "Selengkapnya",
   },
   {
     icon: <Coins className="h-6 w-6" />,
-    title: "Lorem Ipsum",
-    href: "/",
+    title: "Carpal Tunnel Syndrome",
+    href: "/carpal-tunnel-syndrome",
     description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    cta: "Learn More",
-  },
-];
-
-const singleFeatureText: FeatureText[] = [
-  {
-    icon: <Coins className="h-6 w-6" />,
-    title: "Lorem Ipsum",
-    href: "/",
-    description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    cta: "Learn More",
+      "Ketahui apa itu Carpal Tunnel Syndrome, gejala, penyebab, dan cara mencegahnya.",
+    cta: "Selengkapnya",
   },
 ];
 
@@ -51,13 +40,11 @@ const FeatureSet = () => {
       <Container className="not-prose">
         <div className="flex flex-col gap-6">
           <h3 className="text-4xl">
-            <Balancer>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </Balancer>
+            <Balancer>Jelajahi untuk memahami lebih dalam</Balancer>
           </h3>
           <h4 className="text-2xl font-light opacity-70">
             <Balancer>
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+              Temukan Informasi dan Panduan yang Telah Kami Siapkan untuk Anda
             </Balancer>
           </h4>
 
@@ -67,28 +54,6 @@ const FeatureSet = () => {
                 <Link
                   href={`${href}`}
                   className="flex flex-col justify-between gap-6 rounded-lg border p-6 transition-all hover:-mt-2 hover:mb-2"
-                  key={index}
-                >
-                  <div className="grid gap-4">
-                    {icon}
-                    <h4 className="text-xl text-primary">{title}</h4>
-                    <p className="text-base opacity-75">{description}</p>
-                  </div>
-                  {cta && (
-                    <div className="flex h-fit items-center text-sm font-semibold">
-                      <p>{cta}</p> <ArrowRight className="ml-2 h-4 w-4" />
-                    </div>
-                  )}
-                </Link>
-              ),
-            )}
-          </div>
-          <div>
-            {singleFeatureText.map(
-              ({ icon, title, description, href, cta }, index) => (
-                <Link
-                  href={`${href}`}
-                  className="flex flex-col justify-between gap-6 rounded-lg border bg-muted/25 p-6 transition-all hover:-mt-2 hover:mb-2"
                   key={index}
                 >
                   <div className="grid gap-4">
