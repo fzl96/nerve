@@ -25,38 +25,14 @@ export const questions = [
   },
   {
     id: 5,
-    text: "Apakah Anda merasakan nyeri atau sensasi tidak nyaman ketika pergelangan tangan Anda ditekan atau diketuk di area tertentu (pemeriksaan Tinel Sign)?",
+    text: "Apakah anda mengalami mati rasa pada pergelangan tangan atau jari-jari anda?",
     description:
-      "Pemeriksaan Tinel Sign dilakukan dengan mengetuk area pergelangan tangan yang tertekan. Jika Anda merasakan nyeri atau sensasi kesemutan, itu bisa menjadi tanda adanya tekanan pada saraf median, yang umum pada Carpal Tunnel Syndrome.",
+      "Mati rasa adalah hilangnya sensasi atau rasa kebas pada pergelangan tangan atau jari. Kondisi ini sering terjadi ketika saraf median tertekan atau terganggu, yang merupakan gejala umum dari Carpal Tunnel Syndrome. Biasanya, sensasi mati rasa ini lebih sering dirasakan pada ibu jari, jari telunjuk, jari tengah, dan sebagian jari mains.",
   },
   {
     id: 6,
-    text: "Apakah Anda merasakan nyeri atau kesemutan saat melakukan posisi tangan tertekuk seperti pada pemeriksaan Phalen Maneuver?",
-    description:
-      "Pemeriksaan Phalen Maneuver menguji reaksi pergelangan tangan dengan membiarkannya tertekuk dalam posisi tertentu. Jika Anda merasa nyeri atau kesemutan selama pemeriksaan ini, itu bisa menunjukkan adanya kompresi pada saraf median, yang terkait dengan Carpal Tunnel Syndrome.",
-  },
-  {
-    id: 7,
-    text: "Apakah gejala Anda, seperti nyeri atau kesemutan, semakin parah pada malam hari?",
-    description:
-      "Gejala Carpal Tunnel Syndrome seringkali semakin memburuk pada malam hari karena posisi tidur yang menekuk pergelangan tangan. Kondisi ini dapat memperburuk tekanan pada saraf median dan menyebabkan peningkatan nyeri atau kesemutan.",
-  },
-  {
-    id: 8,
-    text: "Apakah gejala Anda meningkat setelah melakukan gerakan berulang, seperti mengetik atau menggunakan mouse?",
-    description:
-      "Gerakan repetitif, seperti mengetik atau menggunakan mouse, dapat meningkatkan tekanan pada pergelangan tangan, yang memperburuk gejala Carpal Tunnel Syndrome. Hal ini disebabkan oleh aktivitas yang memaksa saraf median untuk bekerja secara berlebihan.",
-  },
-  {
-    id: 9,
     text: "Apakah Anda merasa tangan Anda lebih lemah atau lebih sulit untuk melakukan tugas-tugas sehari-hari?",
     description:
       "Kelemahan pada tangan atau jari bisa mengindikasikan adanya masalah pada saraf yang mengontrol kekuatan tangan. Carpal Tunnel Syndrome dapat menyebabkan gejala kelemahan ini, yang membuatnya sulit untuk menggenggam atau memegang benda.",
-  },
-  {
-    id: 10,
-    text: "Apakah Anda merasakan mati rasa pada jari, tangan, atau pergelangan tangan?",
-    description:
-      "Mati rasa adalah hilangnya sensasi pada tangan atau jari yang bisa terjadi ketika saraf median terkompresi. Sensasi ini sering kali muncul di bagian jari tertentu dan dapat berlangsung dalam waktu yang lama.",
   },
 ];

@@ -32,14 +32,7 @@ export function Questionnaire() {
 
   const handleNext = () => {
     if (currentQuestion < questions.length - 1) {
-      if (currentQuestion !== 3) {
-        setCurrentQuestion(currentQuestion + 1);
-        return;
-      }
-      if (score < 4) {
-        handleShowResult();
-        return;
-      }
+      setCurrentQuestion(currentQuestion + 1);
       setCurrentQuestion(currentQuestion + 1);
     } else {
       handleShowResult();
