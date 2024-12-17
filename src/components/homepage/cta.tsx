@@ -26,7 +26,7 @@ const CTA = () => {
             <Link href="/diagnosa">Mulai Diagnosa</Link>
           </Button>
           <Button className="w-fit" variant="link" asChild>
-            <Link href="#">Selengkapnya</Link>
+            <Link href="/tentang-kami">Selengkapnya</Link>
           </Button>
         </div>
       </Container>
