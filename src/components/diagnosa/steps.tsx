@@ -56,7 +56,7 @@ export function Questionnaire() {
   if (!questionnaireMode && !loading) {
     return (
       <div>
-        <Result score={score} />
+        <Result score={score} answers={answers} />
       </div>
     );
   }

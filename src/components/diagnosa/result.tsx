@@ -1,5 +1,4 @@
 "use client";
-import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,9 +10,27 @@ import {
 } from "@/components/ui/card";
 import { AlertTriangle, CheckCircle } from "lucide-react";
 
-export default function Result({ score }: { score: number }) {
+type Answers = Record<string, string>;
+
+interface ResultProps {
+  score: number;
+  answers: Answers;
+}
+
+export default function Result({ score, answers }: ResultProps) {
+  const answerArray = Object.values(answers).map((value) =>
+    value === "yes" ? 1 : 0,
+  );
+  let indicated;
+
+  if (score === 6) indicated = true;
+  else if (!answerArray[5]) indicated = true;
+  else if (!answerArray[4]) indicated = true;
+  else indicated = false;
+
+  console.log(indicated);
   const getResult = (score: number) => {
-    if (score === 6) {
+    if (score >= 5 && indicated) {
       return {
         title: "Terindikasi penyakit Carpal Tunnel Syndrome",
         description:
